@@ -1,6 +1,6 @@
-THis is file1 to write helloWorld
+THis is file1 to write helloWorld....!!!!!
 
-class myclass{
+class MyClass{
 	public static void main(String args[]){
 		System.out.println("Hello World......welcome to git");
 	}
