@@ -1,3 +1,4 @@
 this is file2
-change1
-change2
+change-->1
+Cchange-->2
+change3 from remote
