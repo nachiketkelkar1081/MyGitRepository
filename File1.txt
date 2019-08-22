@@ -3,12 +3,13 @@ THis is file1 to write helloWorld....!!!!!
 class MyClass{
 	
 
-	public static void myMethod()
+	public static void myMethod(String str)
 	{
 		System.out.println(str);
 	}	
 
 	public static void main(String args[]){
-
+		MyClass obj = new MyClass();
+		obj.myMethod("welcome Git............!!");
 	}
 }
