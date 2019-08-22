@@ -2,7 +2,8 @@ THis is file1 to write helloWorld....!!!!!
 
 class MyClass{
 	
-	private void myMethod(String str)
+
+	public static void myMethod()
 	{
 		System.out.println(str);
 	}	
