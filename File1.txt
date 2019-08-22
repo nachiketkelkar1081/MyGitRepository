@@ -2,9 +2,9 @@ THis is file1 to write helloWorld....!!!!!
 
 class MyClass{
 	
-	void myMethod()
+	private void myMethod(String str)
 	{
-		System.out.println("Hello World......welcome to git");
+		System.out.println(str);
 	}	
 
 	public static void main(String args[]){
