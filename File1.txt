@@ -1,7 +1,13 @@
 THis is file1 to write helloWorld....!!!!!
 
 class MyClass{
-	public static void main(String args[]){
+	
+	void myMethod()
+	{
 		System.out.println("Hello World......welcome to git");
+	}	
+
+	public static void main(String args[]){
+
 	}
 }
