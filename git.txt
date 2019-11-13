@@ -1,0 +1,495 @@
+nachiket_kelkar@ELTP-JAVA3 MINGW64 ~
+$ cd C:/GitDemo
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo
+$ ls
+EMS/  File1.txt
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo
+$ git version
+git version 2.20.1.windows.1
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo
+$ git init
+Initialized empty Git repository in C:/GitDemo/.git/
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        File1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git add File1.txt
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   File1.txt
+
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git commit -m "file1 is created..!!"
+git commit -m "file1 is created..git status"
+[master (root-commit) 2c13251] file1 is created..git status
+ 1 file changed, 1 insertion(+)
+ create mode 100644 File1.txt
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   File1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git add .
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   File1.txt
+
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git commit -m "class myclass is created to display hello world....!!!!"
+git commit -m "class myclass is created to display hello world....git statusgit status"
+[master d1db7c5] class myclass is created to display hello world....git statusgit status
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   File1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git commit -am "Spaces added and System.out.println written properly.."
+[master 3d91642] Spaces added and System.out.println written properly..
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git log
+commit 3d91642271ed03dd1f918201ea016070c38c923a (HEAD -> master)
+Author: nachiket kelkar <nachiket_kelkar@persistent.com>
+Date:   Wed Aug 21 12:29:02 2019 +0530
+
+    Spaces added and System.out.println written properly..
+
+commit d1db7c57c663791cf7eeb782e70dc6ff44a325ae
+Author: nachiket kelkar <nachiket_kelkar@persistent.com>
+Date:   Wed Aug 21 12:25:33 2019 +0530
+
+    class myclass is created to display hello world....git statusgit status
+
+commit 2c132518fc031960978e79afe91a7b1a923ea624
+Author: nachiket kelkar <nachiket_kelkar@persistent.com>
+Date:   Wed Aug 21 12:20:24 2019 +0530
+
+    file1 is created..git status
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git log --oneline
+3d91642 (HEAD -> master) Spaces added and System.out.println written properly..
+d1db7c5 class myclass is created to display hello world....git statusgit status
+2c13251 file1 is created..git status
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git log --oneline -2
+3d91642 (HEAD -> master) Spaces added and System.out.println written properly..
+d1db7c5 class myclass is created to display hello world....git statusgit status
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git log --author="nachiket"
+commit 3d91642271ed03dd1f918201ea016070c38c923a (HEAD -> master)
+Author: nachiket kelkar <nachiket_kelkar@persistent.com>
+Date:   Wed Aug 21 12:29:02 2019 +0530
+
+    Spaces added and System.out.println written properly..
+
+commit d1db7c57c663791cf7eeb782e70dc6ff44a325ae
+Author: nachiket kelkar <nachiket_kelkar@persistent.com>
+Date:   Wed Aug 21 12:25:33 2019 +0530
+
+    class myclass is created to display hello world....git statusgit status
+
+commit 2c132518fc031960978e79afe91a7b1a923ea624
+Author: nachiket kelkar <nachiket_kelkar@persistent.com>
+Date:   Wed Aug 21 12:20:24 2019 +0530
+
+    file1 is created..git status
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git log --since="08/21/2019"
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git log --since="08/20/2019"
+commit 3d91642271ed03dd1f918201ea016070c38c923a (HEAD -> master)
+Author: nachiket kelkar <nachiket_kelkar@persistent.com>
+Date:   Wed Aug 21 12:29:02 2019 +0530
+
+    Spaces added and System.out.println written properly..
+
+commit d1db7c57c663791cf7eeb782e70dc6ff44a325ae
+Author: nachiket kelkar <nachiket_kelkar@persistent.com>
+Date:   Wed Aug 21 12:25:33 2019 +0530
+
+    class myclass is created to display hello world....git statusgit status
+
+commit 2c132518fc031960978e79afe91a7b1a923ea624
+Author: nachiket kelkar <nachiket_kelkar@persistent.com>
+Date:   Wed Aug 21 12:20:24 2019 +0530
+
+    file1 is created..git status
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git log --until="08/21/2019"
+commit 3d91642271ed03dd1f918201ea016070c38c923a (HEAD -> master)
+Author: nachiket kelkar <nachiket_kelkar@persistent.com>
+Date:   Wed Aug 21 12:29:02 2019 +0530
+
+    Spaces added and System.out.println written properly..
+
+commit d1db7c57c663791cf7eeb782e70dc6ff44a325ae
+Author: nachiket kelkar <nachiket_kelkar@persistent.com>
+Date:   Wed Aug 21 12:25:33 2019 +0530
+
+    class myclass is created to display hello world....git statusgit status
+
+commit 2c132518fc031960978e79afe91a7b1a923ea624
+Author: nachiket kelkar <nachiket_kelkar@persistent.com>
+Date:   Wed Aug 21 12:20:24 2019 +0530
+
+    file1 is created..git status
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git log --until="08/20/2019"
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git log --until="08/21/2019" --oneline
+3d91642 (HEAD -> master) Spaces added and System.out.println written properly..
+d1db7c5 class myclass is created to display hello world....git statusgit status
+2c13251 file1 is created..git status
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git log --grep="hello"
+commit d1db7c57c663791cf7eeb782e70dc6ff44a325ae
+Author: nachiket kelkar <nachiket_kelkar@persistent.com>
+Date:   Wed Aug 21 12:25:33 2019 +0530
+
+    class myclass is created to display hello world....git statusgit status
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git log --help
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git log --oneline
+3d91642 (HEAD -> master) Spaces added and System.out.println written properly..
+d1db7c5 class myclass is created to display hello world....git statusgit status
+2c13251 file1 is created..git status
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git checkout 2c13251
+Note: checking out '2c13251'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 2c13251 file1 is created..git status
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo ((2c13251...))
+$ git checkout master
+Previous HEAD position was 2c13251 file1 is created..git status
+Switched to branch 'master'
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   File1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git diff
+diff --git a/File1.txt b/File1.txt
+index cdfca9a..61c5778 100644
+--- a/File1.txt
++++ b/File1.txt
+@@ -1,6 +1,6 @@
+-THis is file1 to write helloWorld
++THis is file1 to write helloWorld....!!!!!
+
+-class myclass{
++class MyClass{
+        public static void main(String args[]){
+                System.out.println("Hello World......welcome to git");
+        }
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git add .
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git diff
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git diff --staged
+diff --git a/File1.txt b/File1.txt
+index cdfca9a..61c5778 100644
+--- a/File1.txt
++++ b/File1.txt
+@@ -1,6 +1,6 @@
+-THis is file1 to write helloWorld
++THis is file1 to write helloWorld....!!!!!
+
+-class myclass{
++class MyClass{
+        public static void main(String args[]){
+                System.out.println("Hello World......welcome to git");
+        }
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git commit --m "capitalized and text is changed"
+[master 6800bb1] capitalized and text is changed
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git diff
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git diff --staged
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        FileToDelete.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git add .
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git commit -m "File to delete is created..."
+[master c01f569] File to delete is created...
+ 1 file changed, 1 insertion(+)
+ create mode 100644 FileToDelete.txt
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git log --oneline
+c01f569 (HEAD -> master) File to delete is created...
+6800bb1 capitalized and text is changed
+3d91642 Spaces added and System.out.println written properly..
+d1db7c5 class myclass is created to display hello world....git statusgit status
+2c13251 file1 is created..git status
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    FileToDelete.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git rm FileToDelete.txt
+rm 'FileToDelete.txt'
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    FileToDelete.txt
+
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git commit -m "FileTo delete is deleted ...... asach"
+[master dbbc6b2] FileTo delete is deleted ...... asach
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 FileToDelete.txt
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git log --oneline
+dbbc6b2 (HEAD -> master) FileTo delete is deleted ...... asach
+c01f569 File to delete is created...
+6800bb1 capitalized and text is changed
+3d91642 Spaces added and System.out.println written properly..
+d1db7c5 class myclass is created to display hello world....git statusgit status
+2c13251 file1 is created..git status
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .class
+        .tmp
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git commit --am ".tmp, .jar, .war is ignored "
+error: pathspec '.tmp, .jar, .war is ignored ' did not match any file(s) known to git
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git add .
+
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git commit --m ".tmp, .jar, .war is ignored by creating .gitignore file"
+[master be2ffe4] .tmp, .jar, .war is ignored by creating .gitignore file
+ 1 file changed, 5 insertions(+)
+ create mode 100644 .gitignore
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git log -oneline
+fatal: unrecognized argument: -oneline
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git log --oneline
+be2ffe4 (HEAD -> master) .tmp, .jar, .war is ignored by creating .gitignore file
+dbbc6b2 FileTo delete is deleted ...... asach
+c01f569 File to delete is created...
+6800bb1 capitalized and text is changed
+3d91642 Spaces added and System.out.println written properly..
+d1db7c5 class myclass is created to display hello world....git statusgit status
+2c13251 file1 is created..git status
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   File1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git commit -am "newline is added"
+[master 4ceb396] newline is added
+ 1 file changed, 1 insertion(+)
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git log --oneline
+4ceb396 (HEAD -> master) newline is added
+be2ffe4 .tmp, .jar, .war is ignored by creating .gitignore file
+dbbc6b2 FileTo delete is deleted ...... asach
+c01f569 File to delete is created...
+6800bb1 capitalized and text is changed
+3d91642 Spaces added and System.out.println written properly..
+d1db7c5 class myclass is created to display hello world....git statusgit status
+2c13251 file1 is created..git status
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git revert 4ceb396
+hint: Waiting for your editor to close the file... unix2dos: converting file C:/GitDemo/.git/COMMIT_EDITMSG to DOS format...
+dos2unix: converting file C:/GitDemo/.git/COMMIT_EDITMSG to Unix format...
+[master 22969ea] Revert "newline is added"
+ 1 file changed, 1 deletion(-)
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git log --oneline
+22969ea (HEAD -> master) Revert "newline is added"
+4ceb396 newline is added
+be2ffe4 .tmp, .jar, .war is ignored by creating .gitignore file
+dbbc6b2 FileTo delete is deleted ...... asach
+c01f569 File to delete is created...
+6800bb1 capitalized and text is changed
+3d91642 Spaces added and System.out.println written properly..
+d1db7c5 class myclass is created to display hello world....git statusgit status
+2c13251 file1 is created..git status
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git reset be2ffe4
+
+nachiket_kelkar@ELTP-JAVA3 MINGW64 /c/GitDemo (master)
+$ git log --oneline
+be2ffe4 (HEAD -> master) .tmp, .jar, .war is ignored by creating .gitignore file
+dbbc6b2 FileTo delete is deleted ...... asach
+c01f569 File to delete is created...
+6800bb1 capitalized and text is changed
+3d91642 Spaces added and System.out.println written properly..
+d1db7c5 class myclass is created to display hello world....git statusgit status
+2c13251 file1 is created..git status
+
+
